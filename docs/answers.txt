@@ -1,0 +1,38 @@
+Github Tutorial Completion Date:  10/24/2025
+Github Account Creation:  ~ 9 months ago
+
+1.  PS C:\Users\adamp\assignment2> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 579 bytes | 579.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Zoreon/assignment2.git
+   010c521..4bf585b  master -> master
+
+2. 9 commits so far, 4 were done by me (Adam) and the other 5 were from the original creator Esteban Perra. This was the command: git rev-list --all --count
+
+3. The file was last modified on 10/24 at 11:15pm by me, here is the command:  git log -1 --format=%cd -- README.md
+
+4. Branches makes it so you can test stuff and get experimental without actually making changes so if an idea is cool then its fine to dwelve into a branch worry free. Another reason is group work, 
+it makes it really convienent to have people all do their own piece and just combine to get the whole picture, and the downsided arent too bad to resolve so the payoff is generally worth it.
+
+5. So git status shows the current working state and whats going on right now in the repository, while git log shows all of the past commits (like how it was used above), so the difference is time focus.
+
+6. You can use the same command I used before but swap it with HEAD as this points to the current branch only, and then swap it with the file name like this: git rev-list --count HEAD -- Vehicle.h   
+
+7. Git log can narrow down files paired with grep, just like if you were in a normal command line like this:  git log --grep="file"
+
+8. A- Inheritance is the idea that a class can be based off another class allowing the same structure but different implementation, for example a class like currency can have inherited
+      a class like Dollar and another class like Yen which is still built structurally from currency but expanded upon to fit its theme
+   B- Polymorphism is taking a class or structure and using it again in a way that changes the definition but allows for things to be defined or instatiated immediately or have special 
+      conditions to be met when used again, a use for this is overloading a function which makes is beneficial for reusability
+   C- Encapsulation is keeping attirbutes like functions and variables separate in things like classes so access is limited properly and everything is organized
+
+9. The main difference is the Integration workflow makes it so everyone can push into the main repository but the Dictator workflow only has one person who has push privilges, the dictator, and 
+   pushes from non-dictator roles goes to a intermediary called the Lieutenant
+
+10.  The benefit of the Dictator workflow in the case of 100 people is the likelihood of conflicts, since there is an overseer who handles it there shoudld be less chaotic conflicts that could 
+     potentially cause big changes or mess ups 
